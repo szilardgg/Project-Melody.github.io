@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="index.css" />
+    <title>WN web</title>
+</head>
+
+<body>
+
+    <nav class="bg1">
+        <a class="navitem" href="index.html">Főoldal</a>
+        <a class="navitem" href="index2.html">Rólunk</a>
+        <a class="navitem" href="index3.html">Rendezvények</a>
+        <a class="navitem btn active" href="">Radio</a>
+    </nav>
+
+
+    <div class="page">
+        <h1>Weazel Radio</h1>
+    </div>
+    <div class="lists" style="margin-left: 26%; width: 700px;">
+        <img src=" https://static.wixstatic.com/media/a1d136_fea514ea0953438483ddf752b1889dfd~mv2.jpg" alt="">
+    </div>
+    <div class="lists2" style="margin-left: 0%; font-size: 25px;">
+        Unod a sok egyhangú rádió csatornát? Hallgasd inkább a Weazel Rádiót, ahol mindig egyedi zenékkel és széles körű lefedettséggel várunk titeket! Ha hirdetni szeretnél, arra is van lehetőséged keress minket a székhelyünkön! Weazel News rádió, ahol a hangulat
+        az egekbe jár.​
+
+    </div>
+    <a class="button-3" role="button" href="http://188.173.138.246:8000/">Csatlakozom most!</a>
+
+
+
+    <script>
+        var header = document.getElementById("bg1");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+</body>
+
+</html>
