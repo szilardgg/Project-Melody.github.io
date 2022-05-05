@@ -11,6 +11,10 @@ body {
     height: 100vh;
 }
 
+*{
+color:red;
+}
+
 .bg1{
 position: relative;
 display: flex;
